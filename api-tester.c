@@ -19,7 +19,7 @@ void print_help() {
     printf("  -reuseConnects          - Attempts to reuse the connections if the server allows it.\n");
     printf("  -keepConnectsOpen       - Force a new connection with every request (not advised).\n");
     printf("Help:\n");
-    printf("  -? or --help - Display this help message.\n");
+    printf("  -? or --help            - Display this help message.\n");
 }
 #pragma clang diagnostic pop
 
