@@ -255,7 +255,6 @@ int main(int argc, char *argv[]) {
         curl_easy_setopt(pCurls[i], CURLOPT_TCP_KEEPALIVE, reuseConnects);
         curl_easy_setopt(pCurls[i], CURLOPT_FORBID_REUSE, keepConnectsOpen);
         curl_easy_setopt(pCurls[i], CURLOPT_HTTPHEADER, curlHeaders);
-
     }
 
     long callsPerThread = totalCalls / numThreads;
