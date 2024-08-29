@@ -16,7 +16,7 @@ void print_help() {
     printf("  -sleepTime [value]      - Sleep time in milliseconds between calls within a thread. Default is 0.\n");
     printf("  -requestTimeOut [value] - HTTP request timeout in milliseconds. Default is 10000.\n");
     printf("  -connectTimeOut [value] - HTTP request timeout in milliseconds. Default is 20000.\n");
-    printf("  -reuseConnects          - Add the request 'Connection: keep-alive' header.\n");
+    printf("  -reuseConnects          - Attempts to reuse the connections if the server allows it.\n");
     printf("  -keepConnectsOpen       - Force a new connection with every request (not advised).\n");
     printf("Help:\n");
     printf("  -? or --help - Display this help message.\n");
