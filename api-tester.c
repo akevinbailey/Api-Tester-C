@@ -235,6 +235,7 @@ int main(int argc, char *argv[]) {
     pthread_mutex_init(&mutex, NULL);  //Don't forget to free this memory!!
     double *responseTimes = malloc(totalCalls * sizeof(double)); // Don't forget to free this memory!!
 
+    // Put in the connection HTTP header so the server can try to fulfill our request.
     struct curl_slist *curlHeaders = NULL;  // Don't forget to free this memory!!
     if (reuseConnects) {
         curlHeaders = curl_slist_append(curlHeaders, "Connection: keep-alive");
